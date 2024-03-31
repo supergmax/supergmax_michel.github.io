@@ -7,7 +7,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="mt-10 bg-gray-900 px-8 pt-12">
+    <footer className="mt-10 bg-[#66a5f9] px-8 pt-12">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
@@ -80,14 +80,10 @@ export function Footer() {
             color="white"
             className="text-center font-normal opacity-75"
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
+            &copy; {CURRENT_YEAR} Made By{" "}
+            <a href="https://github.com/supergmax" target="_blank">
+              SuperGmax
             </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
-            </a>
             .
           </Typography>
 

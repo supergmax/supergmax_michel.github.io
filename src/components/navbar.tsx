@@ -68,12 +68,12 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
+          href="https://ceeplus.fr"
           target="_blank"
           variant="h6"
           color={isScrolling ? "gray" : "white"}
         >
-          Material Tailwind
+          Cee+
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
