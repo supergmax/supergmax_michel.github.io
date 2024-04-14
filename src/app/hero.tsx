@@ -1,14 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
-import { Typography } from '@mui/material'
+import { Button, Typography } from "@material-tailwind/react";
 
 
 function Hero() {
@@ -22,25 +15,42 @@ function Hero() {
             <br /> TRANSITION ÉNERGETIQUE.
             </Typography>
             <Typography
-              variant="h1"
+              variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
               Optimisez l’efficacité énergétique de vos bâtiments avec CEE+, votre partenaire spécialisé en rénovation énergétique durable et innovante.
             </Typography>
-            
+            <Typography className="mb-4" color="white" variant="h6">
+              Contactez nous
+            </Typography>
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
               <Button
                 size="lg"
                 color="white"
-                className="flex justify-center items-center gap-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                className="flex justify-center items-center gap-3"
+              >
                 <Image
                   width={256}
                   height={256}
-                  src="/logos/onomie_no_bg.png"
-                  alt="logo cee+"
-                  className="w-8 h-8"
+                  src="/logos/logo-apple.png"
+                  alt="metamask"
+                  className="w-6 h-6"
                 />
-                Contactez nous
+                App Store
+              </Button>
+              <Button
+                size="lg"
+                color="white"
+                className="flex justify-center items-center gap-3"
+              >
+                <Image
+                  width={256}
+                  height={256}
+                  src="/logos/logo-google.png"
+                  alt="metamask"
+                  className="w-6 h-6"
+                />
+                Google Play
               </Button>
             </div>
           </div>
@@ -59,7 +69,7 @@ function Hero() {
             Learning App
           </Typography>
           <Typography
-            variant="h3"
+            variant="paragraph"
             className="font-normal !text-gray-500 lg:w-5/12"
           >
             Download our app to dive into a vast library of courses, tutorials,

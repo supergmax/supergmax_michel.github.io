@@ -1,11 +1,8 @@
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
-import { Typography } from '@mui/material'
+    Typography,
+    Card,
+    CardBody,
+  } from "@material-tailwind/react";
   
   
   interface FeatureCardProps {
@@ -16,8 +13,8 @@ import { Typography } from '@mui/material'
   
   export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
     return (
-      <Card color="transparent" shadow={false}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <CardBody className="grid justify-start" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <Card color="transparent" shadow={false}>
+        <CardBody className="grid justify-start">
           <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
             <Icon className="h-6 w-6" />
           </div>

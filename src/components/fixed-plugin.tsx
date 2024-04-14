@@ -1,13 +1,6 @@
 "use client";
 import Image from "next/image";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
-import { Typography } from '@mui/material'
+import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
   return (
@@ -15,10 +8,8 @@ export function FixedPlugin() {
       <Button
         color="white"
         size="sm"
-        className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50" 
-        placeholder={undefined} 
-        onPointerEnterCapture={undefined} 
-        onPointerLeaveCapture={undefined}>
+        className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50"
+      >
         Contact Us
       </Button>
     </a>

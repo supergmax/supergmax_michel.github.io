@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
-import { Typography } from '@mui/material'
+import { Typography } from "@material-tailwind/react";
 
 import {
   CursorArrowRaysIcon,
@@ -57,7 +50,7 @@ export function Features() {
           Diverse Learning Resources
         </Typography>
         <Typography
-          variant="h1"
+          variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
         >
           Access your learning materials on the go. Whether you&apos;re
