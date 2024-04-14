@@ -1,7 +1,15 @@
 "use client";
 
 import React from "react";
-import { Typography, Card } from "@material-tailwind/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Button,
+} from "@material-tailwind/react";
+import { Typography } from '@mui/material'
+
 
 const FAQS = [
   {
@@ -39,7 +47,7 @@ export function Faqs() {
             Frequently asked questions
           </Typography>
           <Typography
-            variant="lead"
+            variant="h2"
             className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
           >
             A lot of people don&apos;t appreciate the moment until it&apos;s
@@ -50,7 +58,7 @@ export function Faqs() {
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent">
+            <Card key={title} shadow={false} color="transparent" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <Typography color="blue-gray" className="pb-6" variant="h4">
                 {title}
               </Typography>

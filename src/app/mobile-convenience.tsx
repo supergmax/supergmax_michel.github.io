@@ -3,7 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Button,
+} from "@material-tailwind/react";
+import { Typography } from '@mui/material'
 
 const OPTIONS = [
   {
@@ -40,7 +47,7 @@ export function MobileConvenience() {
             Mobile Convenience
           </Typography>
           <Typography
-            variant="lead"
+            variant="h1"
             className="mb-5 px-4 text-left  text-xl !text-gray-500 lg:px-0  "
           >
             Access your learning materials on the go.
@@ -51,7 +58,7 @@ export function MobileConvenience() {
               <InfoCard key={title} title={title}>
                 {description}
               </InfoCard>
-            ))}
+            ))} 
           </div>
         </div>
       </div>

@@ -16,10 +16,11 @@ export default function Campaign() {
       <Hero />
       <VideoIntro />
       <Feature />
-      <MobileConvenience />
+      
       <Testimonials />
       <Faqs />
       <Footer />
     </>
   );
 }
+//<MobileConvenience />

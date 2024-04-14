@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Button,
+} from "@material-tailwind/react";
+import { Typography } from '@mui/material'
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
 
@@ -42,7 +49,7 @@ export function Testimonials() {
             What Clients Say
           </Typography>
           <Typography
-            variant="lead"
+            variant="h1"
             className="mb-10 max-w-3xl text-center !text-gray-600"
           >
             Discover what our valued clients have to say about their experiences
